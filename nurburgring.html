@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Nürburgring | Unofficial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .carouselHome .carousel-item {
+        height: 82vh;
+        background-size: cover;
+        background-position: center;
+      }
+      .car-xp {
+        max-height: 450px;
+        background-size: cover;
+        background-position: center;
+      }
+      .carousel-caption {
+        bottom: 50px;
+      }
+      .background-img {
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+      }
+      .background-img-xpl {
+        height: 65vh;
+        background-size: cover;
+        background-position: center;
+      }
+      .bannerText-text {
+        font-size: 4.2rem;
+        font-weight: bold;
+      }
+      .motorsport-text {
+        font-size: 2rem;
+      }
+      .weather-temp {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .mBanner-text {
+        margin-bottom: 4em;
+      }
+      .no-outline {
+        outline: none;
+        box-shadow: none;
+      }
+      @media (max-width: 576px) {
+        .carousel-caption {
+          display: block !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/Nurnburgring.png" alt="Nürburgring" width="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#">INFO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">DRIVING</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EVENTS</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">EXPLORE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+          </ul>
+          <div class="weather-temp">
+            <span><i class="bi bi-cloud-sun"></i> 24°C</span>
+            <a class="nav-link" href="#"><i class="bi bi-bag"></i></a>
+            <a class="nav-link" href="#">LOGIN</a>
+            <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="motorsportCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#motorsportCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#motorsportCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#motorsportCarousel" data-bs-slide-to="2"></li>
+      </ol>
+
+      <!-- Carousel items -->
+      <div class="carouselHome">
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('images/bannerinfo.png')"
+          >
+            <div class="carousel-caption d-none d-md-block text-start">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12 col-xl-6">
+                    <img
+                      src="images/pngwing.com.png"
+                      style="max-height: 250px"
+                      class="img-fluid"
+                    />
+                    <h1 class="bannerText-text">The Pinnacle</h1>
+                    <h2 class="mBanner-text">of Motorsport tracks.</h2>
+                  </div>
+                  <div class="col-xs-12 col-xl-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('images/b2.jpg')"
+          >
+            <div class="carousel-caption d-none d-md-block text-start">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <h1 class="bannerText-text">The Thrill</h1>
+                    <h2 class="mBanner-text">of fast-paced experiences.</h2>
+                  </div>
+                  <div class="col-xl-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url(images/b3.jpg)"
+          >
+            <div class="carousel-caption d-none d-md-block text-start">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <h1 class="bannerText-text">The Heart</h1>
+                    <h2 class="mBanner-text">
+                      of Racing Technology and Prowess.
+                    </h2>
+                  </div>
+                  <div class="col-xl-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#motorsportCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#motorsportCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="text-center text-white p-5 fs-4" style="background-color: red">
+      <div class="container-fluid">
+        <p>
+          With 154 corners and more than 300 metres of elevation change, as well
+          as various surfaces, the track is the most grueling test of every
+          aspect of a car, from its tyres to complex engineering solutions like
+          transmissions, suspension, and importantly, engines.
+        </p>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div
+      class="container-fluid text-center display-2"
+      style="color: red; margin-bottom: 20px"
+    >
+      The Nürburgring
+    </div>
+    <div class="container-fluid">
+      <div class="row my-5">
+        <div class="col-xl-2"></div>
+        <div class="col-xl-4 text-center fs-4" style="color: black">
+          <p>
+            Experience the thrill of the Nürburgring Nordschleife, Germany's
+            iconic 20.8 km (12.9 mi) track renowned for testing high-performance
+            vehicles since 1927. Known as the ultimate playground for automotive
+            enthusiasts, this legendary circuit is where car manufacturers push
+            their limits and chase record times, creating a buzz that captivates
+            motorsport fans worldwide. Originally part of a longer, 28.3 km
+            track, the Nordschleife combines breathtaking scenery with
+            adrenaline-pumping turns, making it a must-visit destination for
+            thrill-seekers and car lovers alike. Come feel the excitement of the
+            world's most challenging race track!
+          </p>
+        </div>
+        <div class="col-xl-5">
+          <img src="images/map.jpg" class="img-fluid" />
+        </div>
+        <div class="col-xl-1"></div>
+      </div>
+    </div>
+
+    <!-- Exp-->
+    <div class="background-img" style="background-image: url(images/ex.jpg)">
+      <div class="container-fluid">
+        <div class="row my-4"></div>
+        <div class="row my-4">
+          <div class="col-xl-1"></div>
+          <div class="col-xl-5">
+            <h1 class="bannerText-text mt-5 text-white display-2">
+              Unforgettable Driving Experience
+            </h1>
+            <h2 class="fs-4 text-white mb-3">
+              Drive through the legendary track and immerse yourself like the
+              legends.
+            </h2>
+            <div class="col-xl-6">
+              <button type="button" class="btn btn-outline-light mb-3">
+                Join the Nurburgring Driving Academy
+              </button>
+            </div>
+            <div class="col-xl-6">
+              <a
+                class="btn btn-danger"
+                href="#"
+                role="button"
+                style="background-color: red"
+                >Drive as a Tourist</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-5"></div>
+          <div class="col-xl-1"></div>
+        </div>
+      </div>
+    </div>
+    <!-- News-->
+    <div class="container">
+      <div
+        class="display-4 text-start"
+        style="color: red; margin-bottom: 20px; margin-top: 20px"
+      >
+        Events
+      </div>
+      <div class="row my-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card m-3 shadow">
+            <img
+              src="https://i.ytimg.com/vi/HYTPHQIfhpA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB_sHYcaw9q5Gta10tCPFaXsT8blw"
+              class="card-img-top"
+            />
+            <div class="card-body h-4">
+              <h5 class="card-title">NÜRBURGRING FAMILY DAY</h5>
+              <p class="card-text">
+                Look forward to a varied program that offers fun and
+                entertainment for the whole family.
+              </p>
+              <a
+                href="#"
+                class="btn btn-danger mx-auto d-block"
+                style="background-color: red"
+                >Check it out</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card m-3 shadow">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRik2A5Tkp92Q0bOLtWRKyL4I2hqw0Sqpp8lQ&s"
+              class="card-img-top"
+            />
+            <div class="card-body h-1">
+              <h5 class="card-title">JOB EXHIBITION POWERED BY NÜRBURGRING</h5>
+              <p class="card-text">
+                The job fair at the Nürburgring is equally attractive...
+              </p>
+              <a
+                href="#"
+                class="btn btn-danger mx-auto d-block"
+                style="background-color: red"
+                >Check it out</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card m-3 shadow">
+            <img
+              src="https://i.ytimg.com/vi/fHsyzN19L18/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDqCj0kdRXzw7Kz6ZVQA576Pe38xw"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">ADAC 24H NÜRBURGRING QUALIFIERS</h5>
+              <p class="card-text">
+                It is the final battle before the endurance race of the year...
+              </p>
+              <a
+                href="#"
+                class="btn btn-danger mx-auto d-block"
+                style="background-color: red"
+                >Check it out</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card m-3 shadow">
+            <img
+              src="https://i.ytimg.com/vi/rTah-ankQLk/maxresdefault.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">DTM</h5>
+              <p class="card-text">
+                The DTM will continue to be the spearhead for professionals in
+                the future. The ADAC is continuing the successful concept and...
+              </p>
+              <a
+                href="#"
+                class="btn btn-danger mx-auto d-block"
+                style="background-color: red"
+                >Check it out</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore-->
+    <div
+      class="background-img-xpl"
+      style="background-image: url(images/xpl-1.png)"
+    >
+      <div class="container-fluid">
+        <div class="row my-4"></div>
+        <div class="row my-4">
+          <div class="col-xl-1"></div>
+          <div class="col-xl-5">
+            <h1 class="bannerText-text mt-5 text-white display-2">
+              Experience the Myth Upclose
+            </h1>
+            <h2 class="fs-4 text-white mb-3">
+              Best place to spend the time with your friends and families.
+            </h2>
+            <div class="col-xl-6">
+              <button type="button" class="btn btn-outline-light mb-3">
+                Nurburgring Family Guide
+              </button>
+            </div>
+            <div class="col-xl-6">
+              <a
+                class="btn btn-danger"
+                href="#"
+                role="button"
+                style="background-color: red"
+                >Buy a Ticket</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-4 col-xs-12 shadow mt-5">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active car-xp">
+                  <img
+                    src="https://live.staticflickr.com/5184/5700636691_e727fc130d_b.jpg"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item car-xp">
+                  <img
+                    src="https://resc.deskline.net/images/RPT/1/57d805e4-e9e2-4d00-a03f-ca06395e3176/99/image.jpg"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item car-xp">
+                  <img
+                    src="https://pbs.twimg.com/media/Fkg3bKZX0AYMa1k?format=jpg&name=4096x4096"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-white py-4" style="background-color: rgb(158, 0, 0)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+              Experience the thrill of driving at the Nürburgring. Join us for
+              an unforgettable adventure!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">About</a></li>
+              <li><a href="#" class="text-white">Services</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>&copy; 2024 Nürburgring Experience. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
