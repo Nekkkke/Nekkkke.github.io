@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'DynaPuff', sans-serif;
+  box-sizing: border-box;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+  background-position: center;
+  background-size: center;
+}
+.navbar{
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 100px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+}
+li a:hover{
+  background: white;
+  transition: 0.6s;
+}
+.navbar a:hover{
+  color: black;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.content h1{
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.banner video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+  .banner video{
+      width: 100%;
+      height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .content h1{
+    font-size: 40px;
+  }
+}
+.custom-btn {
+  width: 150px; /* Same width for all buttons */
+  border: 1px solid white; /* White outline */
+  color: white; /* White text */
+  background-color: transparent; /* Hollow look */
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  background-color: white; /* Button turns white */
+  color: black; /* Text turns black */
+}
+
+/* Ensure consistent button size */
+.btn-group {
+  gap: 10px; /* Add spacing between buttons */
+}
+.avatar {
+  border-radius: 50%;
+}
+.video-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: #f8f9fa; /* Optional: Light background for contrast */
+}
+
+/* Set fixed size for the carousel */
+#videoCarousel {
+  width: 640px; /* Standard YouTube embed width */
+  height: 360px; /* Standard YouTube embed height */
+}
+
+@media(max-width: 700px){
+  #videoCarousel {
+    width: 456px;
+    height: 256px;
+  }
+}
+
+/* Ensure iframe fits within carousel items */
+.carousel-item iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Optional: Style the carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Makes the controls white for visibility */
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+ }
+ 
+.avatar {
+  border-radius: 50%;
+}
+h2 {
+  font-weight: 500;
+}
+.about-me {
+  background-color: rgb(156, 79, 34);
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+}
+.noroi-avatar{
+  width: 400px;
+  height: auto;
+}
+.workContainer{
+  width: 100%;
+  border: 1px solid #0000;
+}
+/*.section-work{
+  background-color: rgb(13, 13, 17);
+}*/
+
+
+.swiper-slide img {
+  width: 100%; /* Fully responsive image */
+  max-width: 600px; /* Restrict the size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: aqua;
+}
+.swiper{
+  height: 235px;
+  margin-bottom: 20px;
+}
