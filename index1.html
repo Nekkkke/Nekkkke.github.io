@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick's Repository</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="images/envisage (9).png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+      }
+      body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: black;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none; /* Ensures no underline on hover */
+      }
+      .nav {
+        border-bottom: 0.5px solid #5e5e5e;
+      }
+      .gallery {
+        height: 100vh; /* Full height for vertical scrolling */
+        overflow-y: hidden; /* Hide scrollbars */
+        scroll-snap-type: y mandatory; /* Smooth snapping between images */
+        -webkit-overflow-scrolling: touch;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+        scroll-snap-align: start; /* Snap to each image */
+      }
+      .gallery-wrapper {
+        height: 100vh; /* Full height to limit scrolling */
+        overflow: hidden; /* No visible scrollbars */
+      }
+      .card-title {
+        font-family: "Space Mono", monospace;
+        color: white;
+        transition: color 0.3s ease;
+      }
+      .card-title:hover {
+      }
+      .card-text {
+        font-family: "Space Mono", monospace;
+        color: #5e5e5e;
+      }
+      .card {
+        background-color: transparent;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        color: inherit;
+        text-decoration: none;
+      }
+      .card:hover {
+        background: linear-gradient(50deg, #000000, #4e5a5c, #111f22);
+        background-size: 400% 400%;
+        animation: gradient-animation 2s ease infinite; /* Trigger the animation on hover */
+        color: rgb(0, 0, 0);
+      }
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .gallery {
+        overflow-y: scroll; /* Enable vertical scrolling */
+        scroll-behavior: smooth; /* Smooth scrolling */
+      }
+
+      .gallery::-webkit-scrollbar {
+        display: none; /* Hide scrollbars (optional) */
+      }
+      .avatar {
+        width: 150px;
+        height: 150px;
+      }
+			.art-gallery img{
+				border-radius: 10px;
+				filter: grayscale(100%); /* Makes the image black and white */
+			  transition: filter 0.5s ease; /* Smooth transition effect */
+			}
+
+			.art-gallery img:hover {
+			  filter: grayscale(0%); /* Restores the color on hover */
+			}
+			.footer-side{
+				border-top: 0.5px solid #5e5e5e;
+			}
+    </style>
+  </head>
+  <body>
+    <!--<div class="loading-screen container-fluid tex" style="z-index: 999">
+      Loading...
+    </div>-->
+
+    <section class="nav">
+      <div class="container-fluid m-0 p-0 py-2" style="z-index: 1">
+        <nav class="navbar" style="background-color: black; top: 0">
+          <div class="col-2">
+            <div class="navbar-logo">
+              <span
+                class="fs-6 text-center"
+                style="color: white; font-family: 'Space Mono', monospace"
+                >NICK ALBERT NAYLE</span
+              >
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="text-center">
+              <span
+                class="fs-6"
+                style="color: white; font-family: 'Space Mono', monospace"
+                >WEB DESIGNER</span
+              >
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="navbar-logo d-flex align-items-center"></div>
+            <span
+              class="fs-6"
+              style="color: white; font-family: 'Space Mono', monospace"
+              >ILLUSTRATOR</span
+            >
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-12 col-lg-2 mt-3"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <div data-aos="fade-right" data-aos-duration="3000">
+              <img
+                class="avatar rounded-3 mx-auto d-block my-3"
+                src="images/nnn.png"
+              />
+            </div>
+            <p class="card-text text-center">ABOUT</p>
+            <h5
+              class="card-title fs-6 pl-2"
+              style="font-family: 'Montserrat', sans-serif"
+            >
+              I specialize in HTML, CSS, and JavaScript, with intermediate
+              knowledge of Java, MySQL, and Git. My creativity is my Design. I
+              have a keen understanding in digital illustration and graphic
+              design. I strive to further the skill I’ve honed as a hobby and
+              professionally. I am currently studying at the Polytechnic
+              University of the Philippines as an IT Student with a big passion
+              for programming and design. Please feel free to Contact me and get
+              your idea to life.
+            </h5>
+            <div data-aos="fade-right" data-aos-duration="3000">
+              <p class="card-text text-center pt-3">
+                PROGRAMMING IS MY LANGUAGE
+              </p>
+              <h5
+                class="card-title fs-6 pl-2 text-center"
+                style="font-family: 'Space Mono', monospace"
+              >
+                HTML | CSS | JAVASCRIPT | JQUERY | SPLINE | JAVA | GIT | PHP |
+                MYSQL
+              </h5>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="5000">
+              <p class="card-text text-center pt-3">CREATIVITY IS MY DESIGN</p>
+              <h5
+                class="card-title fs-6 pl-2 text-center"
+                style="font-family: 'Space Mono', monospace"
+              >
+                CLIP STUDIO PAINT | ADOBE PHOTOSHOP PROCREATE PREMIERE |
+                ASEPRITE | CANVA | FIGMA
+              </h5>
+            </div>
+            <p class="card-text text-center pt-3">GET IN CONTACT</p>
+          </div>
+
+          <!-- Work Gallery -->
+          <div class="col-md-12 col-lg-5 d-flex justify-content-center">
+            <div class="gallery-wrapper p-4">
+              <div
+                class="gallery"
+                onwheel="event.preventDefault(); this.scrollBy({ top: event.deltaY });"
+              >
+                <h5 class="card-text text-center">
+                  NOTHING TO SEE HERE NOTHING TO SEE HERE NOTHING TO SEE HERE
+                  NOTHING TO SEE HERE NOTHING TO SEE HERE NOTHING TO SEE HERE
+                </h5>
+                <a href="Activity2/index.html">
+                  <div class="card border-light mb-3 mt-5">
+                    <img
+                      src="images/cardwork1.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body" >
+                      <h5 class="card-title">NURBURGRING</h5>
+                      <p class="card-text">WEBSITE LANDING PAGE</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="Actitvity3/index.html">
+                  <div class="card border-light mb-3">
+                    <img
+                      src="images/cardwork2.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">CRYSTALLIS</h5>
+                      <p class="card-text">CRYPTO CURRENCY TRACKER</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="Activity5/index.html">
+                  <div class="card border-light mb-3">
+                    <img
+                      src="images/cardwork3.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">NOROI HOUSING</h5>
+                      <p class="card-text">INTERIOR DESIGNER PROFILE</p>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="card border-light mb-5">
+                  <img
+                    src="images/missing.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      THERES NOTHING TO SEE HERE YET...
+                    </h5>
+                    <p class="card-text">WORK IN PROGRESS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Gallery -->
+          <div class="col-md-12 col-lg-3 mt-4 p-1">
+            <div class="gallery-wrapper p-3">
+              <div
+                class="gallery"
+                onwheel="event.preventDefault(); this.scrollBy({ top: event.deltaY });"
+              >
+                <h5 class="card-text text-center mb-3 p-5">
+                  CHECK OUT WHAT I DRAW IN MY GALLERY
+                </h5>
+								<div class="row art-gallery">
+                	<div class="card mb-5">
+                	  <img
+                	    src="images/fe4.png"
+                	    class="card-img-top"
+                	    alt="..."
+                	  />
+                	</div>
+									<div class="card mb-5">
+                	  <img
+                	    src="images/fe1.png"
+                	    class="card-img-top"
+                	    alt="..."
+                	  />
+                	</div>
+									<div class="card mb-5">
+                	  <img
+                	    src="images/fe3.png"
+                	    class="card-img-top"
+                	    alt="..."
+                	  />
+                	</div>
+									<div class="card mb-5">
+                	  <img
+                	    src="images/il4.png"
+                	    class="card-img-top"
+                	    alt="..."
+                	  />
+                	</div>
+									<div class="card mb-5">
+                	  <img
+                	    src="images/il9.png"
+                	    class="card-img-top"
+                	    alt="..."
+                	  />
+                	</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+				<div class="col-md-12 col-lg-2 footer-side">
+					<p class="card-text text-center pt-3 m-0">
+						PROGRAMMING IS MY LANGUAGE
+					</p>
+					<p class="card-text text-center m-0">
+						CREATIVITY IS MY DESIGN
+					</p>
+					<p class="card-text text-center mb-3">
+						TEAMWORK IS MY CRAFT
+					</p>
+
+					<a href=""><p class="card-text text-center ">
+						GITHUB
+					</p></a>
+					<a href=""><p class="card-text text-center ">
+						DISCORD
+					</p></a>
+					<a href=""><p class="card-text text-center ">
+						PIXIV
+					</p></a>
+					<a href=""><p class="card-text text-center ">
+						naylenick@gmail.com
+					</p></a>
+
+					<p class="card-text text-center mt-4">
+						© COPYRIGHT 2024 [REDACTED]
+					</p>
+
+					
+
+      	</div>
+			</div>
+    </section>
+
+
+    <!--*<section class="about-section">
+     
+      <div class="container py-5" id="cardRepo">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <a href="Activity2/index.html"><div
+              class="card custom-card"
+              style="background-image: url('images/card1.png')"
+            >
+              <div class="card-body custom-card-text">
+                Activity 2
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="Actitvity3/index.html"><div
+              class="card custom-card"
+              style="background-image: url('images/cry.png')"
+            >
+              <div class="card-body custom-card-text">
+                Activity 4
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="Activity5/index.html"><div
+              class="card custom-card"
+              style="background-image: url('images/cry.png')"
+            >
+              <div class="card-body custom-card-text">
+                Activity 5
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-4 mb-4 non-clickable">
+            <div
+              class="card custom-card"
+              style="background-image: url('images/Locked.png')"
+            >
+              <div class="card-body custom-card-text">
+                Activity 5
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      const gallery = document.querySelector(".gallery");
+
+			document.querySelectorAll('.gallery').forEach((gallery) => {
+		  gallery.addEventListener('wheel', (event) => {
+		    event.preventDefault(); // Prevent default scroll behavior
+		    gallery.scrollBy({
+		      top: event.deltaY, // Allow vertical scrolling
+		      behavior: 'auto', // Avoid snapping; ensures natural scrolling
+		    });
+		  });
+		});
+    </script>
+
+
+    <script>
+      window.addEventListener("load", () => {
+        const loadingScreen = document.querySelector(".loading-screen");
+        const content = document.querySelector(".content");
+
+        setTimeout(() => {
+          loadingScreen.style.transform = "translateY(-100%)";
+
+          setTimeout(() => {
+            content.style.opacity = "1";
+
+            document.body.style.overflow = "auto";
+          }, 800);
+        }, 1000);
+      });
+    </script>
+
+    <script>
+      window.addEventListener("load", () => {
+        document.body.style.overflowY = "hidden";
+
+        setTimeout(() => {
+          document.body.style.overflowY = "auto";
+        }, 1000);
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll(".custom-card").forEach((card) => {
+        card.addEventListener("mouseover", () => {
+          document.querySelectorAll(".custom-card").forEach((c) => {
+            if (c !== card) {
+              c.style.filter = "grayscale(100%)";
+            }
+          });
+        });
+
+        card.addEventListener("mouseout", () => {
+          document.querySelectorAll(".custom-card").forEach((c) => {
+            if (c !== card) {
+              c.style.filter = "";
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
