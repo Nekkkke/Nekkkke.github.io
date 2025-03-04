@@ -170,13 +170,13 @@
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <div data-aos="fade-right" data-aos-duration="3000">
+            <div data-aos="fade-right" data-aos-duration="1000">
               <img
                 class="avatar rounded-3 mx-auto d-block my-3"
                 src="images/nnn.png"
               />
             </div>
-            <p class="card-text text-center">ABOUT</p>
+            <p class="card-text text-center" data-aos="fade-right" data-aos-duration="1500" >ABOUT</p>
             <h5
               class="card-title fs-6 pl-2"
               style="font-family: 'Montserrat', sans-serif"
@@ -190,7 +190,7 @@
               for programming and design. Please feel free to Contact me and get
               your idea to life.
             </h5>
-            <div data-aos="fade-right" data-aos-duration="3000">
+            <div data-aos="fade-right" data-aos-duration="2000">
               <p class="card-text text-center pt-3">
                 PROGRAMMING IS MY LANGUAGE
               </p>
@@ -198,21 +198,21 @@
                 class="card-title fs-6 pl-2 text-center"
                 style="font-family: 'Space Mono', monospace"
               >
-                HTML | CSS | JAVASCRIPT | JQUERY | SPLINE | JAVA | GIT | PHP |
-                MYSQL
+                HTML | CSS | JAVASCRIPT | JQUERY | BOOTSTRAP | JAVA | GIT | PHP |
+                MYSQL | LIBGDX | GRADLE | PYTHON
               </h5>
             </div>
-            <div data-aos="fade-right" data-aos-duration="5000">
+            <div data-aos="fade-right" data-aos-duration="3000">
               <p class="card-text text-center pt-3">CREATIVITY IS MY DESIGN</p>
               <h5
                 class="card-title fs-6 pl-2 text-center"
                 style="font-family: 'Space Mono', monospace"
               >
-                CLIP STUDIO PAINT | ADOBE PHOTOSHOP PROCREATE PREMIERE |
+                CLIP STUDIO PAINT | ADOBE PHOTOSHOP PROCREATE PREMIERE ILLUSTRATOR |
                 ASEPRITE | CANVA | FIGMA
               </h5>
             </div>
-            <p class="card-text text-center pt-3">GET IN CONTACT</p>
+            <p class="card-text text-center pt-3" data-aos-duration="4000">GET IN CONTACT</p>
           </div>
 
           <!-- Work Gallery -->
@@ -268,7 +268,7 @@
                   </div>
                 </a>
 
-                <a href="https://github.com/Nekkkke/SAM-BE">
+                <!--<a href="https://github.com/Nekkkke/SAM-BE">
                   <div class="card border-light mb-5">
                     <img
                       src="images/missing.png"
@@ -282,7 +282,7 @@
                       <p class="card-text">WORK IN PROGRESS</p>
                     </div>
                   </div>
-                </a>
+                </a>-->
               </div>
             </div>
           </div>
@@ -349,18 +349,15 @@
 						TEAMWORK IS MY CRAFT
 					</p>
 
-					<a href=""><p class="card-text text-center ">
+					<a href=""><p class="card-text text-center clickableText">
 						GITHUB
 					</p></a>
-					<a href=""><p class="card-text text-center ">
-						DISCORD
+					<a href="https://www.linkedin.com/in/nick-albert-b-nayle-085400298/"><p class="card-text text-center clickableText">
+						LINKEDIN
 					</p></a>
-					<a href=""><p class="card-text text-center ">
-						PIXIV
-					</p></a>
-					<a href=""><p class="card-text text-center ">
+          <p class="card-text text-center clickableText" onclick="copyToClipboard(this)">
 						naylenick@gmail.com
-					</p></a>
+					</p>
 
 					<p class="card-text text-center mt-4">
 						© COPYRIGHT 2024 [REDACTED]
@@ -424,6 +421,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      function copyToClipboard(element) {
+          const text = element.textContent || element.innerText;
+          navigator.clipboard.writeText(text).then(() => {
+              alert("Copied: " + text);
+              console.error("Failed to copy: ", err);
+          });
+      }
+      </script>
 
     <script>
       const gallery = document.querySelector(".gallery");
