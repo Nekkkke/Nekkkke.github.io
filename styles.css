@@ -274,38 +274,3 @@
       .gallery::-webkit-scrollbar-thumb:hover {
         background: #555;
       }
-
-      .gallery {
-        display: flex;
-        flex-direction: column; /* Default: Vertical scrolling */
-        overflow-y: auto;
-        overflow-x: hidden;
-        height: 100vh;
-        scroll-snap-type: y mandatory;
-        -webkit-overflow-scrolling: touch;
-      }
-      
-      .gallery img {
-        width: 100%;
-        height: auto;
-        scroll-snap-align: start;
-      }
-      
-      /* Horizontal scrolling for smaller screens */
-      @media (max-width: 992px) {
-        .gallery {
-          flex-direction: row; /* Switch to horizontal scrolling */
-          overflow-y: hidden;
-          overflow-x: auto;
-          scroll-snap-type: x mandatory;
-          white-space: nowrap;
-        }
-      
-        .gallery img {
-          width: auto;
-          height: 100vh; /* Maintain full height */
-          display: inline-block;
-          scroll-snap-align: start;
-        }
-      }
-      
